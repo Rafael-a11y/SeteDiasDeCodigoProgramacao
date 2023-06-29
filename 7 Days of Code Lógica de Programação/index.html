@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7</title>
+</head>
+<body>
+    <script>
+        
+
+        function somar(operandoA, operandoB)
+        {
+            return Number(operandoA)+ Number(operandoB);
+        }
+
+        function subtrair(operandoA, operandoB)
+        {
+            return operandoA - operandoB;
+        }
+
+        function multiplicar(operandoA, operandoB)
+        {
+            return operandoA * operandoB;
+        }
+
+        function dividir(operandoA, operandoB)
+        {
+            return operandoA / operandoB;
+        }
+
+        let operador;
+
+        menu : while(true)
+        {
+            let operando1;
+            let operando2;
+
+            operador = prompt("Escolha uma das quatros operações numéricas básicas: Responda com '+', '-', '*', '/' ou 'sair': ");
+
+            if(operador === "+") alert(somar(operando1 = prompt("Insira o primeiro operando: "), operando2 = prompt("Insira o segundo operando: ")));
+
+            else if(operador === "-") alert(subtrair(operando1 = prompt("Insira o primeiro operando: "), operando2 = prompt("Insira o segundo operando: ")));
+
+            else if(operador === "*") alert(multiplicar(operando1 = prompt("Insira o primeiro operando: "), operando2 = prompt("Insira o segundo operando: ")));
+
+            else if(operador === "/") alert(dividir(operando1 = prompt("Insira o primeiro operando: "), operando2 = prompt("Insira o segundo operando: ")));
+
+            else if(operador === "sair") break menu;
+            
+            else alert("Operador inválido");
+        }
+        alert("Até logo amigo");
+    </script>
+</body>
+</html>

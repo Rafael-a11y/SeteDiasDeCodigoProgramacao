@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 5</title>
+</head>
+<body>
+    <script>
+        let frutas = [];
+        let verduras = [];
+        let legumes = [];
+        let congelados = [];
+        let laticinios = [];
+        let doces = [];
+        let resposta = "sim";
+       
+        while(resposta === "sim")
+        {
+            if(frutas.length > 0 || verduras.length > 0 || legumes.length > 0 || legumes.length > 0 || congelados.length > 0 || laticinios.length > 0 || doces.length > 0)
+            {
+                resposta = prompt("Deseja adicionar uma comida na sua lista de compras? Responda sim caso positivo\nCaso queira remover um item da lista, responda com 'remover'.");
+            }
+            else
+            {
+                resposta = prompt("Deseja adicionar uma comida na sua lista de compras? Responda sim caso positivo.\n");
+            }
+            if(resposta === "sim")
+            {
+                let comida = prompt("Qual comida você deseja inserir?")
+                if(comida != null && comida != "")
+                {
+                    categoria = prompt("Em qual categoria essa comida se encaixa: (1)frutas, (2)verduras, (3)legumes, (4)congelados, (5)laticinios ou (6)doces? Responda com o número da categoria.");
+                    if(categoria == 1) 
+                    {
+                        frutas.push(comida);
+                    }
+                    else if(categoria == 2) verduras.push(comida);
+                    else if(categoria == 3) legumes.push(comida);
+                    else if(categoria == 4) congelados.push(comida);
+                    else if(categoria == 5) laticinios.push(comida);
+                    else if(categoria == 6) doces.push(comida);
+                    else alert("Categoria inválida");
+                }
+                else
+                {
+                    alert("Dado inválido.");
+                }
+            }
+            else if((resposta === "remover") && (frutas.length > 0 || verduras.length > 0 || legumes.length > 0 || legumes.length > 0 || congelados.length > 0 || laticinios.length > 0 || doces.length > 0))
+            {
+                let itemASerExcluido = prompt(`Lista de compras:\n Frutas: ${frutas}\n Verduras: ${verduras}\n Legumes: ${legumes}\n Congelados: ${congelados}\n Laticínios: ${laticinios}\n Doces: ${doces}\nEntre com o nome do item que deseja excluir da lista de compras`);
+                let indice;
+                if(frutas.includes(itemASerExcluido))
+                {
+                    indice = frutas.indexOf(itemASerExcluido);
+                    frutas.splice(indice, 1);
+                    alert("O item " + itemASerExcluido + " foi removido com sucesso");
+                }
+                else if(verduras.includes(itemASerExcluido))
+                {
+                    indice = verduras.indexOf(itemASerExcluido);
+                    verduras.splice(indice, 1);
+                    alert("O item " + itemASerExcluido + " foi removido com sucesso");
+                }
+                else if(legumes.includes(itemASerExcluido))
+                {
+                    indice = legumes.indexOf(itemASerExcluido);
+                    legumes.splice(indice, 1);
+                    alert("O item " + itemASerExcluido + " foi removido com sucesso");
+                }
+                else if(congelados.includes(itemASerExcluido))
+                {
+                    indice = congelados.indexOf(itemASerExcluido);
+                    congelados.splice(indice, 1);
+                    alert("O item " + itemASerExcluido + " foi removido com sucesso");
+                }
+                else if(laticinios.includes(itemASerExcluido))
+                {
+                    indice = laticinios.indexOf(itemASerExcluido);
+                    laticinios.splice(indice, 1);
+                    alert("O item " + itemASerExcluido + " foi removido com sucesso");
+                }
+                else if(doces.includes(itemASerExcluido))
+                {
+                    indice = doces.indexOf(itemASerExcluido);
+                    doces.splice(indice, 1);
+                    alert("O item " + itemASerExcluido + " foi removido com sucesso");
+                }
+                else
+                {
+                    alert("Item " + itemASerExcluido + " não encontrado na lista");
+                }
+                resposta = "sim";
+            }
+            else
+            {
+                alert("Muito bem, inserção finalizada.");
+            }
+            
+        }
+        alert(`Lista de compras:\n Frutas: ${frutas}\n Verduras: ${verduras}\n Legumes: ${legumes}\n Congelados: ${congelados}\n Laticínios: ${laticinios}\n Doces: ${doces}`);
+        
+    </script>
+</body>
+</html>

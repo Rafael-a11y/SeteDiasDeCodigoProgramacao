@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o número</title>
+</head>
+<body>
+    <script>
+        const numeroASerAdivinhado = Math.floor(Math.random() * (10 - 0 + 1) + 0);
+        console.log(numeroASerAdivinhado);
+        bloco : {
+            for(let i = 0; i < 3; i++)
+            {
+                let sugestao = prompt("Você precisa adivinhar o número oculto e possui " + (3 - i) + " tentativas. Insira um número: ");
+                if(sugestao == numeroASerAdivinhado)
+                {
+                    alert("Parabéns, voce acertou, o número é " + numeroASerAdivinhado + ".");
+                    break bloco;
+                }
+            }
+            alert("É uma pena que você não conseguiu acertar o número oculto. O número é: " + numeroASerAdivinhado + ".");
+        }
+        
+    </script>
+</body>
+</html>

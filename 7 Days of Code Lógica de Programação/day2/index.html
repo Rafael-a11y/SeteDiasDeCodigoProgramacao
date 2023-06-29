@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        form
+        {
+            display: flex;
+            column-gap: 2rem;
+        }
+
+        .rotulos
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        button
+        {
+            align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <div class="rotulos">
+            <label for="">Nome Completo</label>
+            <label for="">Idade</label>
+            <label for="">Linguagem de Programação</label>
+        </div>
+        <div class  = "rotulos">
+            <input class="campo" type="text">
+            <input class="campo" type="number" max="120" min="18" step="1">
+            <input class="campo" type="text">
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+    <script>
+
+        let nome;
+        let idade;
+        let linguagem;
+
+        function verificarResposta(resposta)
+        {
+            possiveisRespostas = ["sim", "Sim"];
+            condicao = (valor) => valor == resposta;
+            return possiveisRespostas.some(condicao);
+        }
+
+        document.querySelector("button[type=submit]").onclick = function()
+        {
+            nome = document.getElementsByClassName("campo")[0].value;
+            idade = document.getElementsByClassName("campo")[1].value;
+            linguagem = document.getElementsByClassName("campo")[2].value;
+            alert("Olá " + `${nome}` + ", você tem " +  `${idade}` +  " anos e está estudando " +
+             `${linguagem}`);
+            let resposta = prompt(`Você está gostando de estudar ${linguagem}?`);
+            if(verificarResposta(resposta))
+            {
+                alert("Que bom que está gostando, continue estudando e terá bons resultados");
+            }
+            else
+            {
+                alert("É uma pena que não esteja gostando. Já pensou em estudar outras linguagens?");
+            }
+        }
+        
+    </script>
+</body>
+</html>
