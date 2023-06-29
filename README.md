@@ -27,5 +27,5 @@
   <li><strong>Javascript</strong></li>
 </ul>
 
-| [<img src="https://github.com/Rafael-a11y/SeteDiasDeCodigoProgramacao/assets/63820646/c4ef5e3f-3a75-4eab-93c5-2f4b38b9b275" width=115><br><sub>Rafael Souto da Silva</sub>](https://www.linkedin.com/in/rafael-souto-da-silva-920335211/) |
+| [<img src="https://github.com/Rafael-a11y/SeteDiasDeCodigoProgramacao/assets/63820646/c4ef5e3f-3a75-4eab-93c5-2f4b38b9b275" width=115><br><sub>Rafael Souto da Silva</sub><br><a href="https://www.linkedin.com/in/rafael-souto-da-silva-920335211/" target="_blank">LinkedIn</a>](https://www.linkedin.com/in/rafael-souto-da-silva-920335211/) |
 | :---: |
