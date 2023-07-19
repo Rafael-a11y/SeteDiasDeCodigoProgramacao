@@ -1,6 +1,10 @@
 <h1 align = "center">Sete dias de código programação</h1>
-<br>
-<img src="https://github.com/Rafael-a11y/sete-dias-de-codigo-programacao/assets/63820646/4e3a2a06-1b69-43b8-aea5-9a63c3d67ca4#vitrinedev" alt="Captura de tela">
+
+<p align="center">
+  <img src="https://github.com/Rafael-a11y/sete-dias-de-codigo-programacao/assets/63820646/5108aec3-278e-4076-ac0e-7cd2edb639a9#vitrinedev" 
+    alt="Imagem com título escrito: Programação - #sevendaysofcode">
+</p>
+  
 <p>Projeto com sete exercícios de lógica de programação em Javascript feitos ao longo de ua semana.</p>
 <h4>
   ✔️ Projeto finalizado ✔️
